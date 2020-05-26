@@ -1535,7 +1535,7 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget source="global.CurrentTime" render="Label" position="1315,370" size="350,40" font="Regular;32" zPosition="1" halign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1">
 <convert type="ClockToText">Format:%d.%m.%Y</convert>
 </widget>
-<widget name="list" position="20,20" size="1170,760" zPosition="2" font="Regular;28" itemHeight="40" setEventItemFont="Regular;28" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
+<widget name="list" position="20,20" size="1170,760" zPosition="2" font="Regular;32" itemHeight="40" setEventItemFont="Regular;32" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1"/>
 <eLabel position="0,790" size="1820,3" zPosition="-1" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="40,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
