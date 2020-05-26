@@ -1155,7 +1155,7 @@ MultiContentEntryText(pos = (670, 3), size = (150, 37),  font = 1, flags = RT_HA
 <widget source="session.VideoPicture" render="Pig" position="1228,30" zPosition="3" size="530,300" backgroundColor="#ff000000"/>
 <ePixmap pixmap="MX_Titanium_C/menu/menubutton.png" position="1730,815" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Titanium_C/menu/epg.png" position="1660,815" size="48,48" alphatest="blend"/>
-<widget name="list" position="10,67" size="1180,810" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="white" progressBarWidth="80" fieldMargins="13" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="white" colorServiceDescription="#afafaf" colorServiceDescriptionSelected="white" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" transparent="1"/>
+<widget name="list" position="10,67" size="1180,810" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="white" progressBarWidth="80" fieldMargins="13" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="white" colorServiceDescription="#afafaf" colorServiceDescriptionSelected="#ffd700" serviceItemHeight="45" serviceNumberFont="Regular;29" serviceNameFont="Regular;33" serviceInfoFont="Regular;30" transparent="1"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/red48x48.png" position="40,10" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/green48x48.png" position="340,10" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_Titanium_C/buttons/yellow48x48.png" position="640,10" size="48,48" alphatest="blend"/>
