@@ -45,17 +45,16 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <font filename="tuxtxt.ttf" name="Console" scale="100"/>
 <alias name="ChoiceList" font="Regular" size="30" height="35" />
 <alias name="Body" font="Regular" size="30" height="35" />
-<alias name="FileListMulti" font="Regular" size="28" height="32"/> 
+<alias name="FileListMulti" font="Regular" size="28" height="32"/>
 <alias name="FileList" font="Regular" size="28" height="37" />
 <alias name="PlayList" font="Regular" size="28" height="37" />
-<alias name="PluginBrowser0" font="Regular" size="28" height="32"/> 
+<alias name="PluginBrowser0" font="Regular" size="28" height="32"/>
 <alias name="PluginBrowser1" font="Regular" size="24" height="30"/>
-<alias name="ServiceInfo" font="Regular" size="28" height="32"/>
 <alias name="TextNormal" font="Regular" size="30" height="40" />
 <alias name="SelectionList" font="Regular" size="28" height="32"/>
 <alias name="FileListMulti" font="Regular" size="30" height="40"/>
-<alias name="HelpMenuList" font="Regular" size="30" height="50"/> 
-<alias name="HelpMenuListExt0" font="Regular" size="30" height="75"/> 
+<alias name="HelpMenuList" font="Regular" size="30" height="50"/>
+<alias name="HelpMenuListExt0" font="Regular" size="30" height="75"/>
 <alias name="HelpMenuListExt1" font="Regular" size="30"/>
 <alias name="ServiceInfo" font="Regular" size="28" height="32" />
 <alias name="VirtualKeyboard" font="Regular" size="38" height="68" />
@@ -68,24 +67,24 @@ DO NOT REMOVE OR CHANGE THIS HEADER AND SKIN NAME !!!		-->
 <parameter name="FileListName" value="40,2,800,37"/>
 <parameter name="PlayListIcon" value="10,7,30,37"/>
 <parameter name="PlayListName" value="40,0,800,37"/>
-<parameter name="PluginBrowserIcon" value="10,8,150,60"/> 
-<parameter name="PluginBrowserName" value="180,2,35"/> 
-<parameter name="PluginBrowserDescr" value="180,38,30"/> 
-<parameter name="PluginBrowserDownloadIcon" value="10,5,80,60"/> 
-<parameter name="PluginBrowserDownloadName" value="90,0,32"/> 
-<parameter name="PluginBrowserDownloadDescr" value="90,30,30"/> 
-<parameter name="SelectionListLock" value="10,2,35,35"/> 
-<parameter name="SelectionListLockOff" value="10,2,35,35"/> 
-<parameter name="SelectionListDescr" value="60,2,820,32"/> 
-<parameter name="HelpMenuListHlp" value="0,0,840,42"/> 
-<parameter name="HelpMenuListExtHlp0" value="0,0,840,39"/> 
-<parameter name="HelpMenuListExtHlp1" value="0,42,840,30"/> 
-<parameter name="ConfigListSeperator" value="500"/> 
-<parameter name="ChoicelistIcon" value="2,4,35,35"/> 
-<parameter name="ChoicelistDash" value="0,0,850,35"/> 
+<parameter name="PluginBrowserIcon" value="10,8,150,60"/>
+<parameter name="PluginBrowserName" value="180,2,35"/>
+<parameter name="PluginBrowserDescr" value="180,38,30"/>
+<parameter name="PluginBrowserDownloadIcon" value="10,5,80,60"/>
+<parameter name="PluginBrowserDownloadName" value="90,0,32"/>
+<parameter name="PluginBrowserDownloadDescr" value="90,30,30"/>
+<parameter name="SelectionListLock" value="10,2,35,35"/>
+<parameter name="SelectionListLockOff" value="10,2,35,35"/>
+<parameter name="SelectionListDescr" value="60,2,820,32"/>
+<parameter name="HelpMenuListHlp" value="0,0,840,42"/>
+<parameter name="HelpMenuListExtHlp0" value="0,0,840,39"/>
+<parameter name="HelpMenuListExtHlp1" value="0,42,840,30"/>
+<parameter name="ConfigListSeperator" value="500"/>
+<parameter name="ChoicelistIcon" value="2,4,35,35"/>
+<parameter name="ChoicelistDash" value="0,0,850,35"/>
 <parameter name="ChoicelistName" value="45,0,850,35"/>
-<parameter name="ServiceInfoLeft" value="0,0,450,45"/>
-<parameter name="ServiceInfoRight" value="285,0,535,45"/>
+<parameter name="ServiceInfoLeft" value="0,0,450,40"/>
+<parameter name="ServiceInfoRight" value="460,0,800,40"/>
 <parameter name="VirtualKeyboard" value="68,68"/>
 </parameters>
 <windowstyle type="skinned" id= "0">
@@ -1200,25 +1199,23 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <widget name="key_green" position="340,770" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget name="key_yellow" position="610,770" size="225,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
-<screen name="ServiceInfo" position="30,120" size="820,850" title="Serviceinfo">
-<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="440,720" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="30,780" size="48,48" alphatest="blend"/>
-<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="440,780" size="48,48" alphatest="blend"/>
-<eLabel position="0,700" size="820,3" zPosition="-1" backgroundColor="#272727"/>
-<widget name="red" position="90,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="green" position="500,710" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="yellow" position="90,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="blue" position="500,770" size="310,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="infolist" position="20,30" size="780,660" font="Regular;28" itemHeight="40" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showOnDemand" transparent="1"/>
-<widget source="session.CurrentService" render="Label" position="1309,540" size="531,90" font="Regular;42" halign="center" valign="center" backgroundColor="bgbutton" transparent="1">
-<convert type="ServiceName">Name</convert>
-</widget>
+<screen name="ServiceInfo" position="center,200" size="1300,720" title="ServiceInfo">
+<widget name="infolist" position="20,20" size="1260,600" font="Regular;28" itemHeight="40" selectionDisabled="1" foregroundColor="button" backgroundColor="bgbutton" scrollbarMode="showOnDemand" transparent="1"/>
+<eLabel position="0,630" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<eLabel position="0,712" size="1300,3" zPosition="-1" backgroundColor="#272727"/>
+<ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="30,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/green48x48.png" position="330,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/yellow48x48.png" position="630,650" size="48,48" alphatest="blend"/>
+<ePixmap pixmap="MX_HQ9W/buttons/blue48x48.png" position="930,650" size="48,48" alphatest="blend"/>
+<widget name="red" position="90,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="green" position="390,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="yellow" position="690,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget name="blue" position="990,640" size="240,70" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 </screen>
 <screen name="About" position="30,120" size="820,850" title="About">
 <eLabel text="Skin MX HQ9W" position="495,10" size="300,40" font="Regular;34" halign="right" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<eLabel text="Open Black Hole" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="AboutScrollLabel" font="Regular;22" position="20,70" size="798,645" zPosition="2" split="1" dividechar=":" colposition="0"/>
+<eLabel text="OpenPli Team" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="AboutScrollLabel" font="Regular;25" position="20,70" size="798,645" zPosition="2" split="1" dividechar=":" colposition="0"/>
 <ePixmap pixmap="MX_HQ9W/mx.png" position="680,725" size="110,18" alphatest="blend"/>
 <eLabel position="0,755" size="820,3" zPosition="2" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_HQ9W/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
@@ -5958,8 +5955,8 @@ MultiContentEntryText(pos=(630,34), size=(620,35), text = 2, font = 1, flags = R
 <widget name="config" position="0,0" size="820,600" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ9W/menu/bg820x40.png" selectionPixmap="MX_HQ9W/menu/button820x40.png" transparent="1"/>
 <widget name="videofps" position="0,620" size="820,100" font="Regular;28" foregroundColor="info" backgroundColor="bgmain" transparent="1"/>
 </screen>
-<screen name="ServiceInfoSimple" position="30,120" size="820,850" title="ServiceInfoSimple">
-<widget name="infolist" position="20,20" size="780,805" font="Regular;28" selectionDisabled="1" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<screen name="ServiceInfoSimple" position="center,200" size="1300,720" title="ServiceInfoSimple">
+<widget name="infolist" position="20,20" size="1260,600" font="Regular;28" selectionDisabled="1" itemHeight="40" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 </screen>
 <screen name="SoftwareUpdateChanges" position="30,120" size="820,850" title="SoftwareUpdateChanges">
 <widget name="text" position="20,20" size="780,735" font="Regular;28" itemHeight="35" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>

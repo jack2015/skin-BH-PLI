@@ -1235,8 +1235,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 </screen>
 <screen name="About" position="30,120" size="820,850" title="About">
 <eLabel text="Skin MX HQ10" position="495,10" size="300,40" font="Regular;34" halign="right" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<eLabel text="Open Black Hole" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
-<widget name="AboutScrollLabel" font="Regular;22" position="20,70" size="798,645" zPosition="2" split="1" dividechar=":" colposition="0"/>
+<eLabel text="OpenPLi Team" position="20,10" size="300,40" font="Regular;34" halign="left" foregroundColor="info" backgroundColor="bgbutton" transparent="1"/>
+<widget name="AboutScrollLabel" font="Regular;25" position="20,70" size="798,645" zPosition="2" split="1" dividechar=":" colposition="0"/>
 <ePixmap pixmap="MX_HQ10/mx.png" position="680,725" size="110,18" alphatest="blend"/>
 <eLabel position="0,755" size="820,3" zPosition="2" backgroundColor="#272727"/>
 <ePixmap pixmap="MX_HQ10/buttons/red48x48.png" position="10,780" size="48,48" alphatest="blend"/>
