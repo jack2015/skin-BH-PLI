@@ -592,17 +592,17 @@ skin author: Matrix10
 </screen>
 <screen name="MessageBox" title="Message" position="center,225" size="1300,720">
 <panel name="PigTemplate"/>
-<widget name="text" position="20,20" size="780,100" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand"/>
-<widget name="list" position="100,100" font="Regular;28" itemHeight="38" size="580,400"/>
+<widget name="text" position="20,20" size="780,200" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" noWrap="0"/>
+<widget name="list" position="100,210" font="Regular;28" itemHeight="38" size="580,400"/>
 </screen>
 <screen name="MessageBoxSimple" title="Message" position="center,225" size="1300,720">
 <panel name="PigTemplate"/>
-<widget name="text" position="20,20" size="780,80" itemHeight="33" font="Regular;30" scrollbarMode="showOnDemand"/>
-<widget name="list" position="20,80" font="Regular;28" itemHeight="38" size="580,400" scrollbarMode="showOnDemand"/>
+<widget name="text" position="20,20" size="780,200" itemHeight="33" font="Regular;30" scrollbarMode="showOnDemand" noWrap="0"/>
+<widget name="list" position="20,210" font="Regular;28" itemHeight="38" size="580,400" scrollbarMode="showOnDemand"/>
 </screen>
 <screen name="ChoiceBox" position="center,225" size="1300,720" title="Input">
 <panel name="PigTemplate"/>
-<widget name="text" position="20,20" size="780,80" itemHeight="33" font="Regular;30" scrollbarMode="showOnDemand"/>
+<widget name="text" position="20,20" size="780,80" itemHeight="33" font="Regular;30" scrollbarMode="showOnDemand" noWrap="0"/>
 <widget name="list" position="20,80" size="825,500" font="Regular;30" itemHeight="38" scrollbarMode="showOnDemand"/>
 </screen>
 <screen name="VirtualKeyBoard" position="center,225" size="1300,720" zPosition="99" title="Virtual KeyBoard">
@@ -999,7 +999,7 @@ MultiContentEntryText(pos = (680, 3), size = (155, 37),  font = 1, flags = RT_HA
 <ePixmap pixmap="MX_HQ7/menu/ok.png" position="1332,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/menubutton.png" position="1452,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/menu/epg.png" position="1572,810" size="48,48" alphatest="blend"/>
-<widget name="list" position="20,70" size="1180,720" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="#ffffff" colorServiceDescription="grey" colorServiceDescriptionSelected="#ffffff" serviceItemHeight="45" serviceNumberFont="Regular;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg1180x45.png" selectionPixmap="MX_HQ7/menu/button1180x45.png" transparent="1"/>
+<widget name="list" position="20,70" size="1180,720" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="#ffffff" foregroundColorServiceNotAvail="#999999" colorEventProgressbarSelected="#ffffff" colorServiceDescription="#CCAC68" colorServiceDescriptionSelected="#FFD700" serviceItemHeight="45" serviceNumberFont="Regular;34" serviceNameFont="Regular;34" serviceInfoFont="Regular;30" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg1180x45.png" selectionPixmap="MX_HQ7/menu/button1180x45.png" transparent="1"/>
 <ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="40,10" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="340,10" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="640,10" size="48,48" alphatest="blend"/>
@@ -1305,10 +1305,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="Event" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText"></convert>
@@ -1341,10 +1341,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="Event" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText"></convert>
@@ -1374,10 +1374,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="session.Event_Now" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText"></convert>
@@ -1419,10 +1419,10 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="475,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/yellow48x48.png" position="910,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/blue48x48.png" position="1335,810" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_red" position="100,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_green" position="535,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_yellow" position="970,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<widget render="Label" source="key_blue" position="1395,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="Event" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText"></convert>
@@ -1486,8 +1486,8 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget name="config" position="20,20" size="780,600" zPosition="2" font="Regular;30" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg1260x40.png" selectionPixmap="MX_HQ7/menu/button1260x40.png" transparent="1"/>
 <ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
-<widget name="canceltext" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="oktext" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<eLabel text="Cancel" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<eLabel text="Save" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
@@ -1508,8 +1508,8 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 <widget name="config" position="20,20" size="1180,760" zPosition="2" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg1180x40.png" selectionPixmap="MX_HQ7/menu/button1180x40.png" transparent="1"/>
 <ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="648,810" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="1123,810" size="48,48" alphatest="blend"/>
-<widget name="canceltext" position="708,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
-<widget name="oktext" position="1183,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Cancel" position="708,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
+<eLabel text="Save" position="1183,810" size="285,48" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgbutton" transparent="1"/>
 <widget source="session.Event_Now" render="Label" position="1200,150" zPosition="1" size="105,35" font="Regular;28" foregroundColor="button" backgroundColor="bgbutton" halign="right" transparent="1">
 <convert type="EventTime">StartTime</convert>
 <convert type="ClockToText"></convert>
@@ -4308,8 +4308,8 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <screen name="TimeDateInput" position="center,center" size="900,450" title="Time/Date Input">
 <widget name="cancel" pixmap="MX_HQ7/buttons/red.png" position="15,0" size="210,60" alphatest="on" />
 <widget name="ok" pixmap="MX_HQ7/buttons/green.png" position="675,0" size="210,60" alphatest="on" />
-<widget name="canceltext" position="15,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" transparent="1" />
-<widget name="oktext" position="675,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" transparent="1" />
+<eLabel text="Cancel" position="15,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" transparent="1" />
+<eLabel text="Save" position="675,0" zPosition="1" size="210,60" font="Regular;30" halign="center" valign="center" transparent="1" />
 <widget name="config" font="Regular;30" itemHeight="35" position="15,60" size="870,300" />
 </screen>
 <screen name="MinuteInput" position="center,center" size="420,90" title="Seek">
@@ -4814,12 +4814,12 @@ MultiContentEntryPixmapAlphaTest(pos = (759, 4), size = (40, 40), png = 1),
 <ePixmap pixmap="MX_HQ7/menu/bb.png" position="18,638" size="1264,74" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/remotee.png" position="945,160" size="250,250" zPosition="-1" alphatest="on"/>
 <ePixmap pixmap="MX_HQ7/menu/exit2.png" position="1212,650" size="48,48" alphatest="blend"/>
-<widget name="list" position="20,20" size="800,640" font="Regular;26" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
-<widget name="choosen" position="10,650" size="800,100" font="Regular;28" itemHeight="40" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
+<widget name="list" position="10,10" size="800,450" font="Regular;26" itemHeight="32" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
+<widget name="choosen" position="10,470" size="800,200" font="Regular;28" itemHeight="35" enableWrapAround="1" scrollbarMode="showOnDemand" foregroundColor="button" backgroundColor="bgbutton" backgroundColorSelected="selbutton" backgroundPixmap="MX_HQ7/menu/bg820x40.png" selectionPixmap="MX_HQ7/menu/button820x40.png" transparent="1"/>
 <ePixmap pixmap="MX_HQ7/buttons/red48x48.png" position="450,650" size="48,48" alphatest="blend"/>
 <ePixmap pixmap="MX_HQ7/buttons/green48x48.png" position="802,650" size="48,48" alphatest="blend"/>
-<widget name="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
-<widget name="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget render="Label" source="key_red" position="510,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
+<widget render="Label" source="key_green" position="862,650" size="330,50" zPosition="1" font="Regular;32" halign="left" valign="center" foregroundColor="button" backgroundColor="bgkey" transparent="1"/>
 <widget source="global.CurrentTime" render="Label" position="840,50" size="460,70" font="Regular;65" halign="center" foregroundColor="info" backgroundColor="bgmain" transparent="1">
 <convert type="ClockToText">Default</convert>
 </widget>
