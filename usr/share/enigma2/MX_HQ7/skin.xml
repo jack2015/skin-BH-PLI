@@ -602,8 +602,8 @@ skin author: Matrix10
 </screen>
 <screen name="ChoiceBox" position="center,225" size="1300,720" title="Input">
 <panel name="PigTemplate"/>
-<widget name="text" position="20,20" size="780,80" itemHeight="33" font="Regular;30" scrollbarMode="showOnDemand"/>
-<widget name="list" position="20,80" size="825,500" font="Regular;30" itemHeight="38" scrollbarMode="showOnDemand"/>
+<widget name="text" position="30,30" size="780,200" itemHeight="33" font="Regular;30" scrollbarMode="showOnDemand"/>
+<widget name="list" position="30,205" size="825,500" font="Regular;30" itemHeight="38" scrollbarMode="showOnDemand"/>
 </screen>
 <screen name="VirtualKeyBoard" position="center,225" size="1300,720" zPosition="99" title="Virtual KeyBoard">
 <panel name="PigTemplate"/>
