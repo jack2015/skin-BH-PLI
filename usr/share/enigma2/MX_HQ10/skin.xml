@@ -2164,10 +2164,10 @@ MultiContentEntryText(pos = (510, 5), size = (300, 35), flags = RT_HALIGN_LEFT, 
 <widget name="connect" position="0,0" size="494,145" zPosition="-1" pixmaps="MX_HQ10/connection_1.png,MX_HQ10/connection_2.png,MX_HQ10/connection_3.png,MX_HQ10/connection_4.png,MX_HQ10/connection_5.png" transparent="1"/>
 <widget name="lab1" position="5,90" halign="center" size="485,51" zPosition="1" font="Regular;26" valign="center" foregroundColor="button" backgroundColor="bgmain" transparent="1"/>
 </screen>
-<screen name="UpdatePluginMenu" position="30,120" size="820,850" title="Softwaremanager...">
+<screen name="UpdatePluginMenu" position="30,120" size="820,850" title="Softwaremanager">
 <widget source="menu" render="Listbox" enableWrapAround="1" position="0,20" size="820,350" zPosition="1" scrollbarMode="showNever" transparent="1">
 <convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (20, 7), size = (790, 40), flags = RT_HALIGN_LEFT, text =0) ],
+{"template": [ MultiContentEntryText(pos = (20, 7), size = (790, 40), flags = RT_HALIGN_LEFT, text =1) ],
 "fonts": [gFont("Regular",32)],
 "itemHeight":50
 }
